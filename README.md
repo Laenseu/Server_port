@@ -12,7 +12,7 @@ make sure the script is ready and tested
 Step 3: Create the Executable
 use Pyinstaller to create the executable from your python script
 
-pyinstaller --onefile server.py
+pyinstaller --onefile --add-data "httpd.conf;." ServiceITPlus.py
 
 "--onefile: This option tells PyInstaller to bundle everything into a single executable file."
 
